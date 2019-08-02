@@ -1,0 +1,37 @@
+在当前目录创建一个名为learn的文件夹 mkdir learngit
+进入创建文件 cd learngit
+显示当前目录： pwd
+080817@mian
+
+生成密匙关联GitHub：ssh-keygen -t rsa -C "y17252168@outlook.com"
+
+创建git文件库：git init
+创建忽略提交的文件都添加到gitignore文件里面：touch .gitignore
+查询绑定信息：git config -l         40un2387A
+git config --global user.name'trueyang17'
+git config --global user.email'y17252168@outlook.com'
+
+
+查看文件状态：git status
+红色代表还在工作区，绿色代表暂存区，没有红绿说明各版本区已经形成
+把指定文件提交到暂存区：git add xxx（文件名）
+包含修改和增加的，但不包括删除的：git add .
+包含修改和删除的，不包含新增的：git add -u
+同时具备 . 和 -u特征：git add -A
+工作区——暂存区——历史版本区
+提交到历史区：git commit
+注释：git commit-m'xxx'
+查看提交记录：git log
+查看所有历史记录：git reflog
+git diff
+git diff master
+git diff --cached
+
+
+查看关联信息：git remote -v
+关联远程仓库：git remote add learngit 'git@github.com:trueyang17/20181023.git'
+移除关联：git remote remove xxx 
+git pull xxx
+git push xxx
+git push xxx master
+

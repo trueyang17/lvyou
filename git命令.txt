@@ -16,6 +16,7 @@ git config --global user.email'y17252168@outlook.com'
 红色代表还在工作区，绿色代表暂存区，没有红绿说明各版本区已经形成
 把指定文件提交到暂存区：git add xxx（文件名）
 包含修改和增加的，但不包括删除的：git add .
+更新代码 git add *
 包含修改和删除的，不包含新增的：git add -u
 同时具备 . 和 -u特征：git add -A
 工作区——暂存区——历史版本区
@@ -35,3 +36,19 @@ git pull xxx
 git push xxx
 git push xxx master
 
+另一种推送方法
+1、初始化git仓库  git init
+
+2、查看仓库中文件的状态  git status
+
+3、git add . 将工作区的文件添加到暂存区
+  
+
+4、git commit -m "备注"， 将暂存区的文件添加到历史区
+        
+5、git push origin master ，将本地版本库代码推送到远程仓库
+
+6、git clone "远程仓库的地址"
+
+7、git remote add origin git@github.com:xuezhenxiang/201900114.git
+        // 和远程仓库建立连接  

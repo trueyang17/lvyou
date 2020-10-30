@@ -1,0 +1,20 @@
+删除远程分支Chapater6
+git push origin --delete Chapater6
+
+删除本地已经合并分支 Chapater6
+git branch -d  Chapater6
+
+删除本地未合并分支 xx
+git branch -D xx
+
+创建分支 xx
+git branch xx
+
+切换分支 xx
+git checkout xx
+
+合并分支xx
+git merge xx
+
+首次在xx分支上传文件
+git push -u origin xx

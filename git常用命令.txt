@@ -24,7 +24,7 @@ git branch xxx：创建分支xxx
 
 
 git remote add origin https://github.com/qiuhaifeng01/a.git 关联一个远程库
-git push -u（第一次要用-u以后不用）origin master：把当前master分支推送到远程库
+git push -u origin master：（第一次要用-u以后不用）把当前master分支推送到远程库
 git clone https://github.com/xxxxx   从远程库中克隆
 git remote：查看远程库信息
 git remote -v查看远程库的详细信息
